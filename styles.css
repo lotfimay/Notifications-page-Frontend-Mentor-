@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: solid; */
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 60%, 98%);
+  min-height: 100vh;
+}
+
+p {
+  font-size: 1rem;
+}
+h1 {
+  font-size: 1.5rem;
+}
+
+.container {
+  padding: 1.5rem;
+  margin: 4rem 0;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  width: 55%;
+}
+.notifications-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.notifications-title {
+  display: flex;
+  align-items: center;
+}
+#notifications-number {
+  margin-top: 0.2rem;
+  padding: 0 0.5rem;
+  background-color: hsl(219, 85%, 26%);
+  color: white;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  align-self: center;
+}
+.notifications-action {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+.notifications {
+  margin-top: 1rem;
+}
+.notifications .notifications-list {
+  list-style: none;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+}
+
+.new {
+  background-color: hsl(210, 60%, 98%);
+}
+
+.old {
+  background-color: inherit;
+}
+
+.profile-pic-container {
+  width: 54px;
+  height: 54px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  align-self: flex-start;
+  flex-shrink: 0;
+}
+.profile-pic-container img {
+  width: 100%;
+}
+.notification-details {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.paragraph-wrapper {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.new .notification-description::after {
+  content: '\A';
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  /* margin-top: 0.5rem; */
+  background-color: orangered;
+}
+
+.notification-snippet {
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid hsl(211, 68%, 94%);
+}
+
+.notification-snippet:hover {
+  background-color: hsl(211, 68%, 94%);
+  cursor: pointer;
+}
+
+/* .orange-dot {
+
+  margin-left: 5px;
+  align-self: flex-start;
+} */
+
+.image-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  /* margin-left: auto; */
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.group {
+  color: hsl(219, 85%, 26%);
+  font-weight: bold;
+  cursor: pointer;
+}
+.event,
+.post {
+  color: hsl(0, 1%, 58%);
+  font-weight: bold;
+}
+.event:hover,
+.post:hover,
+.user-name:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+
+.time {
+  color: hsl(0, 1%, 62%);
+}
+
+@media (max-width: 40rem) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+}
